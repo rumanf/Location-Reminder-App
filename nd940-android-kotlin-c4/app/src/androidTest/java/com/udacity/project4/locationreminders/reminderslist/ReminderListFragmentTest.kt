@@ -93,7 +93,7 @@ class ReminderListFragmentTest {
         // THEN - Verify that we navigate to the add screen
         verify(navController).navigate(
             ReminderListFragmentDirections.toSaveReminder())
-        }
+        }}}}
 
     //test ui item
     @Test
@@ -121,5 +121,5 @@ class ReminderListFragmentTest {
         launchFragmentInContainer<ReminderListFragment>(Bundle(), R.style.AppTheme)
         // check data is shown
         onView(withText(errormessage)).check(matches(isDisplayed()))
-    }}}}}
+    }}
 
